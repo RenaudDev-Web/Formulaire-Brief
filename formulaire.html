@@ -2,10 +2,12 @@
 <html lang="en">
    
     <head>
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulaire brief 1</title>
+
     </head>
     
     <body>
@@ -14,14 +16,44 @@
 
             <fieldset>
 
+                <legend>Civilité :</legend>
+
+                <label><input type="radio" name="radio" id="masculin">Monsieur</label>
+                <label><input type="radio" name="radio" id="feminin">Madame</label>
+
+                <br><br>
+                
                 <label for="surname">Entrez votre prénom : </label>
                 <input type="text" name="surname" id="surname" placeholder="votre prénom ici" pattern="[a-z]{1,15}" required>
+
+                    <br><br>
 
                 <label for="name">Entrez votre nom : </label>
                 <input type="text" name="name" id="name" placeholder="votre nom ici" pattern="[a-z]{1,15}" required>
 
+                    <br><br>
+
                 <label for="name">Entrez votre âge : </label>
-                <input type="text" name="age" id="age" placeholder="votre age ici" pattern="[a-z]{1,15}" required>
+                <input type="number" name="age" id="age" placeholder="votre age ici" maxlength="3" pattern required="0-9" required>
+
+                    <br><br>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Coordonnées :</legend>
+                
+                <label for="email">Entrez votre E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="votre E-mail ici" required pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})" required>
+
+                    <br><br>
+
+Adresse postale
+Code postal
+Ville
+
+
 
             </fieldset>
 
